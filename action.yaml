@@ -7,7 +7,7 @@ inputs:
     required: true
 runs:
   using: 'docker'
-  image: 'istio/istioctl:${{ inputs.version }}'
+  #image: 'istio/istioctl:${{ inputs.version }}'
   args: 
   - 'manifest'
   - 'generate'
