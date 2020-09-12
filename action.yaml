@@ -5,9 +5,14 @@ inputs:
   istio version:
     description: 'Istio version to install'
     required: true
+  override file:
+    description: 'Istio override file'
+    required: true
 runs:
   using: 'docker'
   image: 'docker://istio/istioctl:1.6.2'
   args: 
   - 'manifest'
   - 'generate'
+  - -f '{{ $input.override file }}'
+  
