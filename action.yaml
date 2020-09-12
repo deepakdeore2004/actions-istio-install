@@ -15,4 +15,5 @@ runs:
   - 'manifest'
   - 'generate'
   - '-f'
-  - $GITHUB_WORKSPACE/${{ inputs.override }}
+  - $GITHUB_WORKSPACE
+  - ${{ inputs.override }}
