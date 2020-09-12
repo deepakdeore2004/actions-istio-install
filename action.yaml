@@ -14,5 +14,5 @@ runs:
   args: 
   - 'manifest'
   - 'generate'
-  - -f 
+  - '-f'
   - ${{ $inputs.override }}
