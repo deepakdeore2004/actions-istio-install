@@ -5,7 +5,7 @@ inputs:
   istio version:
     description: 'Istio version to install'
     required: true
-  override file:
+  override:
     description: 'Istio override file'
     required: true
 runs:
@@ -14,5 +14,4 @@ runs:
   args: 
   - 'manifest'
   - 'generate'
-  - -f '{{ $input.override file }}'
-  
+  - -f '{{ $input.override }}'
