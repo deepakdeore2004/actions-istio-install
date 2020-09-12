@@ -16,4 +16,4 @@ runs:
   - 'generate'
   - '-f'
   - $GITHUB_WORKSPACE
-  - ${{ inputs.override }}
+
