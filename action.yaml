@@ -16,4 +16,5 @@ runs:
   - 'manifest'
   - 'generate'
   - '-f'
-  - /github/workspace/${{ inputs.override }}
+  - /github/workspace/
+  - ${{ inputs.override }}
