@@ -1,0 +1,14 @@
+name: 'Istio install'
+author: 'Deepak Deore'
+description: 'Install istio with custom override file'
+inputs:
+  istio version:
+    description: 'Istio version to install'
+    required: true
+runs:
+  using: 'docker'
+  image: 'docker pull istio/istioctl:${{ inputs.istio version }}'
+  args: 
+  - 'manifest'
+  - 'generate'
+  
