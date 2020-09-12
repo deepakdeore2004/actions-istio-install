@@ -13,7 +13,10 @@ runs:
   #image: 'docker://istio/istioctl:1.6.2'
   image: 'docker://alpine:3.10'
   args: 
-  - env
+  - ls
+  - -l 
+  - /github/workspace
+  - $GITHUB_WORKSPACE
   # - 'manifest'
   # - 'generate'
   # - '-f'
